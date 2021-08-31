@@ -1,0 +1,410 @@
+/* Fonts */
+@font-face {
+  font-family: GE_SS_Two_Medium;
+  src: url('https://arbfonts.com//wp-content/fonts/unlimited-free-arabic-fonts//GE_SS_Two_Medium.otf');
+}
+
+@font-face {
+  font-family: GE_SS_Two_Light;
+  src: url('https://arbfonts.com//wp-content/fonts/new-arabic-fonts//GE_SS_Two_Light-1.otf');
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url('https://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-MyriadPro-Semibold.otf');
+}
+
+:root {
+  /*Color*/
+  --voodoo: rgba(86, 58, 85, 1);
+  --sandal: rgba(173, 139, 117, 1);
+  --nobel: rgba(177, 177, 177, 1);
+  --sandrift: rgba(179, 143, 118, 1);
+  --mercury: rgba(228, 228, 228, 1);
+  --white: rgba(255, 255, 255, 1);
+  /*font size*/
+  --font-size-xxxs: 17px;
+  --font-size-s: 33.9px;
+  --font-size-m: 45px;
+  --font-size-1: 50px;
+  --font-size-xs2: 25px;
+  --font-size-xxs2: 23px;
+  /*font family*/
+  --font-family-ge_ss_two: "GE SS Two";
+  --font-family-gess_two-light: "GESS Two-Light";
+  --font-family-gess_two-medium: "GESS Two-Medium";
+  --font-family-gesstwomedium-medium: "GESSTwoMedium-medium";
+  --font-family-myriadconcptroman-semibold: "MyriadConcptRoman-Semibold";
+}
+
+/* General */
+body {
+  font-family: GE_SS_Two_Light;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered-div {
+  /* parent div should be "relative" */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+}
+
+.v-centered-div {
+  margin: 0;
+  /* parent div should be "relative" */
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.vl {
+  border-left: 2px solid var(--white);
+  height: 100%;
+}
+
+.overlay {
+  background-color: var(--voodoo);
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.eng-text {
+  font-family: MyriadPro !important;
+}
+
+/* Header */
+.navbars-container {
+  height: 160px;
+  width: 100%;
+  padding: 1rem 2rem 0;
+  font-family: GE_SS_Two_Medium;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -ms-transition: background-color 0.4s;
+}
+
+.nav-link, .navbar-toggler {
+  color: var(--white);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+}
+
+.nav-link:hover, .navbar-toggler:hover {
+  color: var(--voodoo);
+}
+
+.nav-link.icon {
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+}
+
+.login-btn {
+  background-color: var(--white);
+  color: var(--voodoo);
+  border-radius: 21px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: background 0.4s, color 0.4s;
+  -webkit-transition: background 0.4s, color 0.4s;
+  -ms-transition: background 0.4s, color 0.4s;
+}
+
+.login-btn:hover {
+  background-color: var(--voodoo);
+  color: var(--white);
+}
+
+.header-container.background-img {
+  background-image: url('resources/header-img.jpg');
+  height: 1080px;
+  width: auto;
+  object-fit: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.header-content {
+  color: var(--white);
+  text-shadow: 0px 8px 8px #00000029;
+}
+
+.header-content .title {
+  font-family: GE_SS_Two_Medium;
+}
+
+/* About */
+.about-container .row {
+  padding: 7rem 5rem;
+}
+
+/*من نحن*/
+.span1 {
+  color: var(--sandrift);
+  text-align: right;
+  font-size: var(--font-size-m);
+  font-family: GE_SS_Two_Medium;
+}
+
+/*نص من نحن*/
+.span2 {
+  color: var(--sandal);
+  text-align: right;
+  font-size: var(--font-size-xs);
+  font-family: GE_SS_Two_Medium;
+}
+
+.hr {
+  border-width: 5px;
+  width: 426px;
+  border-color: var(--voodoo);
+  margin-right: 0;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* Achievements */
+.achievements-container.background-img {
+  background-image: url('resources/achievements-img.jpg');
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.achievements-container .row {
+  padding: 10rem 5rem;
+}
+
+.achievements-container img {
+  filter: drop-shadow(0px 8px 8px #00000029);
+  padding: 0.2rem 4rem 0.2rem;
+}
+
+/* Calender */
+.calender-container {
+  position: relative;
+  padding: 7rem 15rem;
+}
+
+/* Contact */
+.contact-container {
+  position: relative;
+  padding: 7rem 15rem;
+}
+
+.contact-container h1 {
+  color: var(--white);
+  font-family: GE_SS_Two_Medium;
+}
+
+.contact-container p {
+  color: var(--white);
+  font-family: GE_SS_Two_Medium;
+}
+
+.contact-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.contact-container form {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  font-family: GE_SS_Two_Medium;
+}
+
+.contact-container form input, .contact-container form select,  .contact-container form textarea {
+  border-radius: 25px;
+  background-color: var(--mercury);
+  font-family: GE_SS_Two_Medium;
+  color: var(--voodoo);
+  border: none;
+  margin-top: 1rem;
+}
+
+.contact-container form input[type=button] {
+  background-color: var(--voodoo);
+  border-radius: 25px;
+  color: var(--white);
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+}
+
+.contact-container form input[type=button]:hover {
+  background-color: var(--sandal);
+}
+
+.contact-container form p {
+  font-family: GE_SS_Two_Medium;
+  color: var(--voodoo);
+  text-align: center;
+}
+
+.contact-container select{
+  border-radius: 25px;
+  background-color: var(--mercury);
+  border: none;
+  margin-top: 1rem;
+}
+
+.google-map {
+  height: 1080px;
+  width: 1080px;
+  object-fit: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.hr2 {
+  border-width: 5px;
+  width: 426px;
+  border-color: var(--white);
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+
+/* Footer */
+.footer-container {
+  background-color: var(--white);
+  padding: 1rem 5rem 0;
+  box-shadow: 1px -10px 28px -18px #00000029;
+  -webkit-box-shadow: 1px -10px 28px -18px #00000029;
+  -moz-box-shadow: 1px -10px 28px -18px #00000029;
+}
+
+.contact-col {
+  text-align: right;
+  font-family: GE_SS_Two_Medium;
+  color: var(--voodoo);
+}
+
+.mailing-col input {
+  background-color: var(--sandal);
+  color: var(--white);
+  padding: 0.7rem 1rem;
+  border: 0;
+}
+
+.mailing-col input::placeholder {
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.mailing-col input::-moz-placeholder {
+  opacity: 0.7;
+}
+
+.mailing-col input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+
+.mailing-col input::-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.mailing-col input[type=email] {
+  width: 60%;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.mailing-col input[type=button] {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+}
+
+.mailing-col input[type=button]:hover {
+  background-color: var(--sandrift);
+}
+
+.social-col a {
+  color: var(--voodoo);
+  font-size: 1.1rem;
+  padding: 0.2rem;
+  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+}
+
+.social-col a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  color: var(--sandal);
+  font-size: 12px;
+  font-family: GE_SS_Two_Medium;
+}
+
+/* Media queries  */
+/* bootstrap: <md */
+@media (max-width: 767px) {
+  .about-container .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .achievements-container .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .achievements-container img {
+    padding-bottom: 4rem;
+  }
+
+  .contact-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact-col {
+    text-align: center;
+  }
+}
